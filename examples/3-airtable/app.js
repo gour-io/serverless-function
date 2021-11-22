@@ -3,7 +3,7 @@ const result = document.querySelector('.result')
 const fetchProducts = async () => {
   try {
     const { data } = await axios.get('/api/complete')
-    // console.log(data)
+    console.log(data)
     const products = data
       .map((product) => {
         const { id, name, url, price } = product
